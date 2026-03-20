@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0f1117;
+  color: #ffffff;
+}
+
+/* Glow accent */
+:root {
+  --primary: #00ff9c;
+  --card: #1a1d26;
+  --border: #2a2f3a;
+}
+
+/* Card style */
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  box-shadow: 0 0 20px rgba(0, 255, 156, 0.05);
+}
+
+/* Buttons */
+.btn {
+  background: var(--primary);
+  color: #000;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px var(--primary);
+}
