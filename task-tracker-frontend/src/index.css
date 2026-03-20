@@ -13,13 +13,13 @@ body {
 /* Glow accent */
 :root {
   --primary: #00ff9c;
-  --card: #1a1d26;
+  --card: #ffffff61;
   --border: #2a2f3a;
 }
 
 /* Card style */
 .card {
-  background: var(--card);
+  background: #ffffff61;
   border-radius: 14px;
   padding: 20px;
   border: 1px solid var(--border);
