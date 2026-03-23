@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
+import Login from "./pages/Login/Login.jsx";
 import Dashboard from "./pages/Dashboard";
 import CreateReport from "./pages/CreateReport/CreateReport";
 import ProtectedRoute from "./components/ProtectedRoute";
