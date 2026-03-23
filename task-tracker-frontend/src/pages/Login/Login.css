@@ -22,13 +22,13 @@
 .LoginInp {
   display: flex;
   width: inherit;
-  padding: 20px;
-  gap: 20px;
+  padding: 40px;
+  gap: 30px;
   flex-direction: column;
 }
 
 .GIF {
-  height: 500px;
+  height: 600px;
 }
 
 .LoginBTN {
@@ -44,4 +44,3 @@
 .LoginBTN:hover {
   box-shadow: 0 0 10px var(--primary);
 }
-

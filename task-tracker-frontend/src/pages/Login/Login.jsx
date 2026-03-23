@@ -3,7 +3,7 @@ import API from "../../services/api";
 import { AuthContext } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-import bg from "../../assets/BG2.gif";
+import bg from "../../assets/Bg.gif";
 import logo from "../../assets/Logo.png";
 import TextField from "@mui/material/TextField";
 import bgi from "../../assets/Background.jpg";

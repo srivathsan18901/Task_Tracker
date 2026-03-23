@@ -2,13 +2,20 @@
   height: 100vh;
   width: 70px;
   padding: 15px;
-
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  background: #ffffff;
-  border-right: 1px solid #eee;
+  /* 🔥 Blueish white gradient */
+  background: linear-gradient(
+    180deg,
+    #0cdbf65d 10%,
+    #0cdbf65d 20%,
+    #dbeafe 100%
+  );
+  backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
 
   transition: width 0.3s ease;
   overflow: hidden;
@@ -38,18 +45,19 @@
   gap: 12px;
   padding: 10px;
   border-radius: 8px;
-  color: #555;
+  color: #1e293b; /* darker text */
   text-decoration: none;
   transition: 0.3s;
 }
 
 .link:hover {
-  background: #f1f5f9;
+  background: rgba(37, 99, 235, 0.1); /* soft blue hover */
 }
 
 .active {
-  background: #f1f5f9;
+  background: rgba(37, 99, 235, 0.15);
   color: #2563eb;
+  font-weight: 500;
 }
 
 .bottom {

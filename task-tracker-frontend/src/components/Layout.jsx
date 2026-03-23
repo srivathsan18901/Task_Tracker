@@ -10,7 +10,7 @@ export default function Layout({ children }) {
         style={{
           flex: 1,
           padding: "20px",
-          backgroundImage: `linear-gradient(rgba(158, 138, 138, 0.57), rgba(153, 153, 153, 0.28)), url(${bgi})`,
+          backgroundImage: `linear-gradient(rgba(221, 217, 217, 0), rgba(255, 251, 251, 0)), url(${bgi})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

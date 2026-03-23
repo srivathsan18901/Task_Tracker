@@ -97,7 +97,7 @@ export default function CreateReport() {
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <h3>Daily Activities</h3>
             <button className="btn btn-add" onClick={addRow}>
-              ➕ Add Row
+              Add Row
             </button>
           </div>
 
@@ -180,7 +180,7 @@ export default function CreateReport() {
 
         {/* SUBMIT */}
         <button className="btn btn-submit" onClick={handleSubmit}>
-          💾 Submit Report
+          Submit Report
         </button>
       </div>{" "}
     </Layout>
