@@ -1,4 +1,4 @@
-import Sidebar from "./Sidebar";
+import Sidebar from "./sideBar/Sidebar";
 import bgi from "../assets/TempBg.jpg";
 
 export default function Layout({ children }) {

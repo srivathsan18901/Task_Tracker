@@ -1,17 +1,15 @@
 /* Card style */
 .logincard {
-  background: #ffffff61;
+  background: #ffffff9a;
   color: #275cab;
-  height: 500px;
-  width: 300px;
+  width: 500px;
   border-radius: 14px;
   padding: 20px;
-  border: 1px solid var(--border);
   box-shadow: 0 0 20px rgba(0, 255, 156, 0.05);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  gap: 15px;
 }
 
 .login {
@@ -22,9 +20,28 @@
 }
 
 .LoginInp {
-    display: flex;
-    width: inherit;
-    padding: 20px;
-    gap: 20px;
-    flex-direction: column;
+  display: flex;
+  width: inherit;
+  padding: 20px;
+  gap: 20px;
+  flex-direction: column;
 }
+
+.GIF {
+  height: 500px;
+}
+
+.LoginBTN {
+  background: var(--primary);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.LoginBTN:hover {
+  box-shadow: 0 0 10px var(--primary);
+}
+
