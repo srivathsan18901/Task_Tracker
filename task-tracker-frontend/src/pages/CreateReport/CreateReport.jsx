@@ -2,6 +2,8 @@ import { useState } from "react";
 import API from "../../services/api";
 import "./CreateReport.css";
 import Layout from "../../components/Layout";
+import PageWrapper from "../../components/PageWrapper";
+
 
 export default function CreateReport() {
   const [form, setForm] = useState({
@@ -50,36 +52,24 @@ export default function CreateReport() {
 
   return (
     <Layout>
+      <PageWrapper>
       <div className="card">
         <h2>Daily Task Report</h2>
       </div>
       <div className="container">
-        {/* HEADER */}
-        <div className="card">
-          <h2>Daily Task Report</h2>
-
-          <div className="row">
-            <div className="input-group">
-              <label>Date</label>
-              <input
-                type="date"
-                onChange={(e) => setForm({ ...form, date: e.target.value })}
-              />
-            </div>
-
-            <div className="input-group">
-              <label>Calendar Week</label>
-              <input
-                placeholder="CW"
-                onChange={(e) => setForm({ ...form, cw: e.target.value })}
-              />
-            </div>
-          </div>
-        </div>
-
         {/* WEEKLY TASK */}
         <div className="card">
           <h3>Weekly Task</h3>
+
+          <div className="inp_card">
+            <label>Calendar Week</label>
+            <input
+              disabled={!isEditableDay()}
+              placeholder="CW"
+              onChange={(e) => setForm({ ...form, cw: e.target.value })}
+            />
+          </div>
+
           <textarea
             placeholder="Enter weekly task..."
             disabled={!isEditableDay()}
@@ -87,7 +77,7 @@ export default function CreateReport() {
           />
           {!isEditableDay() && (
             <p style={{ color: "red" }}>
-              Weekly task can only be edited on Monday, Wednesday, and Friday.
+              *Weekly task can be created on Monday and Friday and edited on Wednesday.
             </p>
           )}
         </div>
@@ -99,6 +89,14 @@ export default function CreateReport() {
             <button className="btn btn-add" onClick={addRow}>
               Add Row
             </button>
+          </div>
+
+          <div className="inp_card">
+            <label>Date</label>
+            <input
+              type="date"
+              onChange={(e) => setForm({ ...form, date: e.target.value })}
+            />
           </div>
 
           <table className="table">
@@ -182,7 +180,8 @@ export default function CreateReport() {
         <button className="btn btn-submit" onClick={handleSubmit}>
           Submit Report
         </button>
-      </div>{" "}
+      </div>
+      </PageWrapper>
     </Layout>
   );
 }

@@ -34,12 +34,12 @@ export default function Login() {
       }}
     >
       <div className="login">
-        <img
+        {/* <img
           src={bg}
           alt="Bgimg"
           className="GIF"
           style={{ filter: "drop-shadow(0 0 10px #7b86b9)" }}
-        />
+        /> */}
         <div className="logincard">
           <img src={logo} alt="Logo" style={{ height: "100px" }} />
           <h1>LOGIN</h1>

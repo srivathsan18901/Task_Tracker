@@ -5,6 +5,12 @@
   font-family: Arial, sans-serif;
 }
 
+.inp_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .card {
   background: #ffffff93;
   padding: 20px;
