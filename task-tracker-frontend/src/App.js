@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-
+import { Toaster } from "react-hot-toast";
 import Login from "./pages/Login/Login.jsx";
 import Dashboard from "./pages/Dashboard";
 import CreateReport from "./pages/CreateReport/CreateReport.jsx";
@@ -12,8 +12,31 @@ function AnimatedRoutes() {
 
   return (
     <AnimatePresence mode="wait">
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 4000,
+          style: {
+            background: "#ffffff",
+            color: "#295faf",
+          },
+          success: {
+            duration: 3000,
+            iconTheme: {
+              primary: "#4ade80",
+              secondary: "#fff",
+            },
+          },
+          error: {
+            duration: 4000,
+            iconTheme: {
+              primary: "#ef4444",
+              secondary: "#fff",
+            },
+          },
+        }}
+      />
       <Routes location={location} key={location.pathname}>
-
         <Route path="/" element={<Login />} />
 
         <Route
@@ -33,7 +56,6 @@ function AnimatedRoutes() {
             </ProtectedRoute>
           }
         />
-
       </Routes>
     </AnimatePresence>
   );
