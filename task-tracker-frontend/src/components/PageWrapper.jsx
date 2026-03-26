@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 export default function PageWrapper({ children }) {
   return (
     <motion.div
-      initial={{ x: -50, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x: 50, opacity: 0 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.3 }}
     >
       {children}
     </motion.div>
